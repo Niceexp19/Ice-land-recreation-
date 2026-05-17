@@ -1160,56 +1160,57 @@
 </section>
 
 <!-- Reservation -->
-            {% if success %}
-            <div style="background: rgba(201,168,76,0.1); border: 1px solid var(--gold); border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem; text-align: center; color: var(--gold); font-weight: 600;">
-                 ✨ Reservation confirmed! We will contact you shortly. Welcome to Iceland!
-            </div>
-            {% endif %}
-
-            <div class="form-grid">
-                <div class="form-group">
-                     <label class="form-label">Full Name</label>
-                     <input type="text" name="name" placeholder="Your full name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                     <label class="form-label">Phone Number</label>
-                     <input type="tel" name="phone" placeholder="Your phone number" class="form-control" required>
-                </div>
-                <div class="form-group">
-                     <label class="form-label">Date</label>
-                     <input type="date" name="date" class="form-control" required>
-                </div>
-                <div class="form-group">
-                     <label class="form-label">Time</label>
-                     <input type="time" name="time" class="form-control" required>
-                </div>
-                <div class="form-group">
-                     <label class="form-label">Number of Guests</label>
-                     <select name="guests" class="form-control">
-                             <option>1 - 2 Guests</option>
-                             <option>3 - 5 Guests</option>
-                             <option>6 - 10 Guests</option>
-                             <option>10+ Guests</option>
-                         </select>
-                     </div>
-                     <div class="form-group">
-                          <label class="form-label">Package</label>
-                          <select name="package" class="form-control">
-                          <option>Standard — ₦5,000/person</option>
-                          <option>Premium — ₦12,000/person</option>
-                          <option>Event Package — ₦200,000</option>
-                      </select>
-                  </div>
-              </div>
-              <div class="form-group">
-                   <label class="form-label">Special Requests</label>
-                   <textarea name="requests" placeholder="Any special requests..." class="form-control" rows="3"></textarea>
-               </div>
-               <button type="submit" class="btn-gold" style="width: 100%; padding: 16px; font-size: 1rem; border: none; cursor: pointer;">
-                    ✨ Confirm Reservation
-               </button>
-           </form>
+<form method="POST" action="/reserve">
+    {% if success %}
+    <div style="background: rgba(201,168,76,0.1); border: 1px solid var(--gold); border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem; text-align: center; color: var(--gold); font-weight: 600;">
+        ✨ Reservation confirmed! We will contact you shortly. Welcome to Iceland!
     </div>
+    {% endif %}
+
+    <div class="form-grid">
+         <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" name="name" placeholder="Your full name" class="form-control" required>
+         </div>
+         <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" name="phone" placeholder="Your phone number" class="form-control" required>
+        </div>
+        <div class="form-group">
+             <label class="form-label">Date</label>
+             <input type="date" name="date" class="form-control" required>
+       </div>
+       <div class="form-group">
+            <label class="form-label">Time</label>
+            <input type="time" name="time" class="form-control" required>
+      </div>
+      <div class="form-group">
+           <label class="form-label">Number of Guests</label>
+           <select name="guests" class="form-control">
+               <option>1 - 2 Guests</option>
+               <option>3 - 5 Guests</option>
+               <option>6 - 10 Guests</option>
+               <option>10+ Guests</option>
+           </select>
+       </div>
+       <div class="form-group">
+            <label class="form-label">Package</label>
+            <select name="package" class="form-control">
+            <option>Standard — ₦5,000/person</option>
+            <option>Premium — ₦12,000/person</option>
+            <option>Event Package — ₦200,000</option>
+        </select>
+    </div>
+</div>
+<div class="form-group">
+      <label class="form-label">Special Requests</label>
+      <textarea name="requests" placeholder="Any special requests..." class="form-control" rows="3"></textarea>
+</div>
+ <button type="submit" class="btn-gold" style="width: 100%; padding: 16px; font-size: 1rem; border: none; cursor: pointer;">
+     ✨ Confirm Reservation
+ </button>
+</form>
+</div>
 </section>
 
 <!-- Location -->
