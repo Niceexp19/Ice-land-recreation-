@@ -1160,54 +1160,6 @@
 </section>
 
 <!-- Reservation -->
-<section class="reservation" id="reserve">
-    <div class="text-center">
-        <div class="section-label">✦ Reservations</div>
-        <h2 class="section-title">Book Your <span>Experience</span></h2>
-        <p class="section-desc">Reserve your spot at Iceland today</p>
-    </div>
-    <div class="reservation-container">
-        <div class="form-grid">
-            <div class="form-group">
-                <label class="form-label">Full Name</label>
-                <input type="text" placeholder="Your full name" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Phone Number</label>
-                <input type="tel" placeholder="Your phone number" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Date</label>
-                <input type="date" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Time</label>
-                <input type="time" class="form-control">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Number of Guests</label>
-                <select class="form-control">
-                    <option>1 - 2 Guests</option>
-                    <option>3 - 5 Guests</option>
-                    <option>6 - 10 Guests</option>
-                    <option>10+ Guests</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="form-label">Package</label>
-                <select class="form-control">
-                    <option>Standard — ₦5,000/person</option>
-                    <option>Premium — ₦12,000/person</option>
-                    <option>Event Package — ₦200,000</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="form-label">Special Requests</label>
-            <textarea placeholder="Any special requests or dietary requirements..." class="form-control" rows="3"></textarea>
-        </div>
-        <form method="POST" action="/reserve">
-
             {% if success %}
             <div style="background: rgba(201,168,76,0.1); border: 1px solid var(--gold); border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem; text-align: center; color: var(--gold); font-weight: 600;">
                  ✨ Reservation confirmed! We will contact you shortly. Welcome to Iceland!
